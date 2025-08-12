@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <body>
+    <title>Web form</title>
+    <h1>Web Registration Form</h1>
+    <form action="demo5.html" method="get" target="_parent" autocomplete="on">
+        <p><strong>Note :</strong> User can also multiple Email address separating by comma separating value or whitespace.</p>
+        <label><b>Enter Your Email:addresses</b></label>
+        <input type="email" name="email" placeholder="Enter Your Email" required >
+        <label>
+            Select the meeting schedule : <br><br>
+            select date & time <input type="datetime-local" name="meetingdate" ><br><br>
+        </label>
+        <label>Enter Your Birth Month:year </label>
+        <label>Search here:</label>
+        <label><b>Enter your Telephone number</b></label> <br>
+        <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br>
+        <input type="search" name="q">
+        <input type="month" name="newMonth" min="50" max="80"><br>
+        <input type="email" name="email" multiple><br>
+        <input type="number" name="num" min="50" max="80"><br>
+        <input type="url" name="Website" placeholder="http://example.com"><br>
+        <input type="submit" value="Send Data"> <br> <br>
+        <input type="submit" value="search">
+    </form>
+    </body>
+</head>
