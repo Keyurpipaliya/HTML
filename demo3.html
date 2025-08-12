@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <body>
+    <title> HTML Web Form. </title>
+        <h1>Web Form</h1>
+        <p>It is the Website form.</p>
+
+        <form>
+            Select Country:
+            <select name="Country" id="Registration_country">
+                <option value="IN">INDIA</option>
+                <option value="AUS">AUSTRALIA</option>
+                <option value="CAN">CANADA</option>
+                <option value="US">US</option>
+            </select>
+        </form>
+
+        <form>
+            Choose:
+            <input list="browsers" name="browser" placeholder="Enter is Browser" id="Browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Opera">
+                <option value="Safari">
+                </option>
+                </option>
+                </option>
+                </option>
+                </option>
+            </datalist>
+        </form>
+
+        <form>
+            <label> User id :</label>
+            <input type="text" name="user-id" value="user">
+            <label> Password :</label>
+            <input type="password" name="pass" value="pass"><br><br>
+            <input type="submit" value="login">
+            <input type="reset" value="Reset">
+        </form>
+
+        <form>
+            <p>Kindly Select your Favorite Color:</p>
+            <input type="radio" name="color" value="red"> Red <br>
+            <input type="radio" name="color" value="blue"> blue <br>
+            <input type="radio" name="color" value="green"> Green <br>
+            <input type="radio" name="color" value="pink"> Pink <br>
+            <input type="submit" value="submit">
+        </form>
+
+        <! --- CheckBox ---> 
+
+        <form>
+            <p>Kindly select your favorite checkBox: </p>
+            <input type="checkbox" name="sport1" value="cricket">Cricket<br>
+            <input type="checkbox" name="sport2" value="tennis">Tennis<br>
+            <input type="checkbox" name="sport3" value="football">football<br>
+            <input type="checkbox" name="sport4" value="baseball">baseball<br>
+            <input type="checkbox" name="sport5" value="badMinton">badMinton<br><br>
+            <input type="submit" value="submit">
+        </form>
+
+        <form>
+            <input type="button" value="Click me" onclick="alert('Your are learning HTML')">
+        </form>
+
+        <form>
+            <label>Select file Uploaded: </label>
+            <input type="file" name="newfile">
+            <input type="submit" value="submit">
+        </form>
+
+        <form>
+            Pick up favorite color : <br><br>
+            <input type="color" name="upClick" value="#a52a2a">UpClick <br><br>
+            <input type="color" name="downclick" value="#f5f5dc"> DownClick
+        </form>
+
+        <form>
+            Select Start and End Date: <br><br>
+            <input type="date" name="StartDate" value="date"> Start Date: <br><br>
+            <input type="date" name="EndDate" value="date"> End Date: <br><br>
+            <input type="submit">
+        </form>
+
+        <form>
+            <label>Enter Your Age: </label>
+            <input type="number" name="num" min="50" max="50">
+            <input type="submit">
+        </form>
+
+        <form>
+            <label>Enter your Website url</label>
+            <input type="Website" name="Website" placeholder="http://example.com"><br>
+            <input type="submit" value="send Data">
+        </form>
+
+
+    <style>
+        * {
+            height: auto;
+            width: auto;
+            align-items: center;
+            justify-content: flex-start;
+            content: normal;
+            cursor: auto;
+            visibility: hidden;
+            border: black;
+            justify-self: auto;
+        }
+    </style>
+    <script src="script.js">
+        document.getElementById('HTML Web Form').innerHTML();
+    </script>
+    </body>
+</head>
