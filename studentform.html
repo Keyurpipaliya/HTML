@@ -5,52 +5,124 @@
     <body>
         <title>Web Student Form</title>
         <h1><center>Web Student Form</center></h1>
-        <h4>This is First is Student Form</h4>
+        <h4>This is First create is Student Form</h4>
 
         <form action="studentform.html" method="get" target="_self" autocomplete="on" ></form>
-        <p> <strong>It is Create an Web Student Form and Student Validation Form.</strong></p>
+        <p> <strong>It is Create an Web Student Form and Student Validation Form. </strong></p>
 
         <td>
         <label>First Name</label><br>
-        <input type="text" name="FirstName"  placeholder="Enter is FirstName" height="50" width="200%" required ><br>
+        <input type="text" name="FirstName"  placeholder="Enter is FirstName" height="50" width="200" required max="100"><br>
         </td>
 
         <label>Second Name</label><br>
-        <input type="text" name="SecondName"  placeholder="Enter is SecondName" height="50" width="200%" required><br>
+        <input type="text" name="SecondName"  placeholder="Enter is SecondName" height="50" width="200" required max="100"><br>
 
         <label>Student GR id</label><br>
-        <input type="number" name="GR id"  placeholder="Enter is Your Student GR id" height="50" width="200%" required><br>
+        <input type="number" name="GR id"  placeholder="Enter is Your Student GR id" height="50" width="200" required max="100"><br>
 
-        <label>Student Gmail</label><br>
-        <input type="text" name="Gmail"  placeholder="Enter is Your Gmail" height="50" width="200%" required><br>
+        <label>Student Email</label><br>
+        <input type="text" name="Email"  placeholder="Enter is Your Gmail" height="50" width="200" required max="100"><br>
+
+        <label>Student PhoneNumber</label><br>
+        <input type="number" name="PhoneNumber"  placeholder="Enter is Your PhoneNumber" height="50" width="200" required max="100"><br>
+
+        <label>Date</label><br>
+        <input type="datetime-local" name="Date" placeholder="Enter is Your Date" height="50" width="200" required ><br>
 
         <label>Student Subject1</label><br>
-        <input type="number" name="Subject1"  placeholder="Enter is  Student Subject1" height="50" width="200%" required ><br>
+        <input type="number" name="Subject1"  placeholder="Enter is  Student Subject1" height="50" width="200" required max="100" ><br>
 
         <label>Student Subject2</label><br> 
-        <input type="number" name="Subject2"  placeholder="Enter is  Student Subject2" height="50" width="200%" required ><br>
+        <input type="number" name="Subject2"  placeholder="Enter is  Student Subject2" height="50" width="200" required max="100"><br>
 
         <label>Student Subject3</label><br>
-        <input type="number" name="Subject3"  placeholder="Enter is  Student Subject3" height="50" width="200%" required ><br>
+        <input type="number" name="Subject3"  placeholder="Enter is  Student Subject3" height="50" width="200" required max="100"><br>
 
-        <label>Student Grade</label><br>
-        <input type="number" name="Grade"  placeholder="Enter is Student Grade" height="50" width="200%" required><br>
+        <label>Student Subject4</label><br>
+        <input type="number" name="Subject4"  placeholder="Enter is  Student Subject4" height="50" width="200" required max="100"><br>
 
-        <label>Student Percentage</label><br>
-        <input type="number" name="Percentage"  placeholder="Enter is Student Percentage" height="50" width="200%" required><br>
+        <label>Student Subject5</label><br>
+        <input type="number" name="Subject5"  placeholder="Enter is  Student Subject5" height="50" width="200" required max="100"><br>
 
         <label>Student Marks</label><br>
-        <input type="number" name="Marks"  placeholder="Enter is Student Marks" height="50" width="200%" required><br>
+        <input type="number" name="Marks"  placeholder="Enter is Student Marks" height="50" width="200" required max="100"><br>
+
+        <label>Student Grade</label><br>
+        <input type="number" name="Grade"  placeholder="Enter is Student Grade" height="50" width="200" required max="100"><br>
+
+        <label>Student Percentage</label><br>
+        <input type="number" name="Percentage"  placeholder="Enter is Student Percentage" height="50" width="200" required max="100"><br>
+
+        <label>Student Gender :</label> <br>
+        <input type="radio" name="Male"  height="50" width="200" required> MALE<br>
+        <input type="radio" name="Female" height="50" width="200" required> FEMALE <br>
+
+        <label>Student Course : </label><br>
+        <input type="text"  name="Select Course" placeholder="Please Select your Course"><br>
 
         <label>Student Address</label><br>
-        <input type="text" name="Address"  placeholder="Enter is Student Address" height="50" width="200%" required><br>
+        <input type="text" name="Address"  placeholder="Enter is Student Address" height="50" width="200" required><br>
 
         <label>Student Description</label><br>
         <textarea></textarea><br>
 
-        <input type="file" value="newfile" name="file"><br>
-        <input type="Submit" value="Submit" onclick="alert(`You are Click is HTML Language`)"><br>
-        <input type="reset" value="Reset"><br>
+        <input type="file" value="newfile" name="file"> <br>
+
+        <input type="Submit" value="Submit" onclick="alert(`You are Clicked is Submitted Form`)">
+        <input type="reset" value="Reset"> <br>
+
+        <object data="data/test.pdf" type="application/pdf" width="300" height="200">
+            alt : <a href="data/test.pdf">test.html</a>
+        </object>
+
+        <style>
+            * {
+                background-color: whitesmoke;
+            }
+
+            button {
+                margin: 60px;
+                padding: 50px;
+                height: 20px;
+                width: 50px;
+                background-color: burlywood;
+                border-radius: 5px;
+                color: black;
+                border: 5px;
+                cursor: auto;
+            }
+
+            h4 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p {
+                margin-top: 10px;
+                padding: 20px;
+                margin: auto;
+                height: auto;
+                margin-left: auto;
+            }
+
+        </style>
+
+        <script src="script.js">
+            // You can add your JavaScript code 
+            function Student() { 
+                const form = document.getElementById('student').innerText();
+                form.innerText = form;
+                input.className = type ? "Success" : "error";
+                return true;
+
+                const UserRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                const Student = input.value.trim();
+            }
+            return true;
+
+        </script>
 
     </body>
 </head>
