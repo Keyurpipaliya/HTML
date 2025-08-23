@@ -9,8 +9,19 @@
         </center>
     </h1>
     <h3>
-    <br> Emp Personal Information Form.<br>
+    <center><br> Emp Personal Information Form.<br></center>
     </h3>
+
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Information</a>
+            <a href="#">Details</a>
+            <a href="#">Others</a>
+        </li>
+    </ul>
 
     <fieldset>
 
@@ -18,7 +29,7 @@
         <p>It is the create is an Employee Information Form and Employee Personal Information.</p>
 
         <label>Emp id</label> <br>
-        <input type="number"  placeholder="Enter is Emp id" autofocus ="Emp id" required max="100"> <br>
+        <input type="text"  placeholder="Enter is Emp id" autofocus ="Emp id" required max="100"> <br>
 
         <label>Emp First - Name : </label> <br>
         <input type="text"  placeholder="Enter is Emp Name" autofocus name="Emp Name" required max="100"> <br>
@@ -26,14 +37,11 @@
         <label>Emp Second - Name : </label> <br>
         <input type="text"  placeholder="Enter is Emp Name" autofocus name="Emp Name" required max="100"> <br>
 
-        <label>Emp Email </label> <br>
-        <input type="email" placeholder="Enter is Emp Email" autofocus name="Emp Email" required max="100"> <br>
+        <label>Emp Salary : </label> <br>
+        <input type="number" placeholder="Enter is Emp Salary" autofocus name="Emp salary" required max="100"> <br>
 
         <label>Emp Date of Birth : </label> <br>
         <input type="datetime"  placeholder="Enter is Emp Date" autofocus name="Emp Date" required max="100"> <br>
-
-        <label>Emp Salary : </label> <br>
-        <input type="number" placeholder="Enter is Emp Salary" autofocus name="Emp salary" required max="100"> <br>
 
         <label>Emp Parent's Name : </label>  <br>
         <input type="text"  placeholder="Enter is Emp Parents Name"  autofocus name="Emp Name" required max="100"> <br>
@@ -53,32 +61,17 @@
         <input type="radio" value="Fitness" autofocus  required> Medical Fitness<br>
         <input type="radio" value="Certificate" autofocus required> character certificate <br>
 
-        <label> Height : </label> <br>
-        <input type="number" value="Height" placeholder="Enter is Height" autofocus required> <br>
-
-        <label> Caste : </label> <br>
-        <input type="number" value="Caste" placeholder="Enter is Caste" autofocus required> <br>
-
-        <label> Category : </label> <br>
-        <input type="text" value="Category" placeholder="Enter is Category" autofocus required> <br>
-
-        <label> Blood Group : </label> <br>
-        <input type="text" value="blood Group" placeholder="Enter is Blood Group" autofocus required> <br>
-        
         <label> Emp DepartMent : </label> <br>
-        <input type="text" name="DepartMent" placeholder="Enter is Emp DepartMent" autofocus required > <br>
+        <input type="text" name="DepartMent" autofocus placeholder="Enter is Emp DepartMent" required > <br>
 
         <label> Emp Company : </label> <br>
-        <input type="text" name="Company" placeholder="Enter is Emp Company" autofocus required> <br>
+        <input type="text" name="Company" autofocus placeholder="Enter is Emp Company" required> <br>
 
         <label> Emp Designation : </label> <br>
-        <textarea> </textarea> <br>
-
-        <label> Emp PhoneNumber : </label> <br>
-        <input type="number" name="PhoneNumber" autofocus placeholder="Enter is Emp PhoneNumber" required> <br>
+        <textarea></textarea> <br>
 
         <label> Emp address : </label> <br>
-        <input type="text" name="address" autofocus placeholder="Enter is Emp Address" required> <br>
+        <input type="text" name="address" placeholder="Enter is Emp Address" required> <br>
 
         <label> Emp City : </label> <br>
         <input type="text" name="City" autofocus placeholder="Enter is Emp City" required> <br>
@@ -86,17 +79,10 @@
         <label> Emp PinCode : </label> <br>
         <input type="number" value="PinCode" autofocus placeholder="Enter is Emp Pin Code" required> <br>
 
-        <label> Emp State : </label> <br>
-        <input type="text" value="State" autofocus placeholder="Enter is Emp State" required> <br>
-
-        <img src="images.png" alt="Employee.png" height="200" width="300">
-        <input type="file" value="newfile" name="file" height="200" width="200"><br> 
-        <button type="submit" value="submit" onclick="alert(`Your Click is Submitted Form are successfully.`)">Submit</button>
+        <img src="Employee.png" alt="Employee.png" width="300">
+        <input type="file" value="newfile" name="file"><br> 
+        <button type="submit" value="submit" onclick="alert(`Your Click is Submitted Form.`)">Submit</button>
         <button type="reset" value="reset" onclick="alert(`Your Cancel is Reset Data`)">reset</button>
-
-        <object data="data/test.html" type="text/html" width="300" height="200" > <br>
-            alt : <a href = "Employee.html">Employee</a> <br>
-        </object>
 
     </form>
     </fieldset>
@@ -114,11 +100,6 @@
             display: block;
             align-items: center;
             justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            margin: auto;
-            text-decoration: dashed;
-            padding: 25px;
         }
 
         button {
@@ -128,7 +109,7 @@
             border-radius: 5px;
             padding: auto;
             margin: 2px;
-            margin-top: 10px;
+            margin-top: 15px;
             margin-bottom: 10px;
             color: black;
             background-color: peru;
@@ -147,13 +128,11 @@
         input {
             height: auto;
             width: auto;
-            margin: 5px;
-            padding: 10px;
+            margin: auto;
+            padding: 8px;
             font-size: small;
             font-style: normal;
             font-family: sans-serif;
-            border-radius: 5px;
-            padding-right: 10px;
         }
 
         ul li a {
@@ -161,48 +140,23 @@
             margin: 15px;
             margin-top: auto;
             align-items: center;
-            justify-content: space-between;
-            display: flex;
-            border: 5px;
         }
 
         p {
-            font-weight: bold;
+            font-weight: 800;
             font-style: normal;
             font-size: medium;
             font: 1em sans-serif;
             font-family: sans-serif;
             left: auto;
-            cursor: pointer;
-            border: darkgrey;
-            color: black;
-            text-align: left;
-        }
-
-        fieldset {
-            border: 2px solid black;
-            color: black;
-            border-radius: 5px;
-            box-sizing: inherit;
         }
 
     </style>
     <script src="script.js">
-        Emp = " ";
-        name = " ";
         document.getElementById('Employee.html').innerHTML();
-        const name = document.getElementsByName(`name ,$name`);
-        const emp = document.getElementsByName(`emp ,$emp`);
-        const form = document.querySelectorAll("#Employee");
-
-        function ValidateForm(name, emp) {
-            let name = document.forms["name"]["Emp"].value;
-            if (emp == " " || name == " ") {
-                alert("Emp Data Are SuccessFully Filled..");
-                return false;
-            }
-            return true;
-        }
-
+        const name = document.getElementsByName('name',`$name`);
+        console.log('Enter is the Employees Data : ',` $emp`);
+        
     </script>
+        
 </head>
